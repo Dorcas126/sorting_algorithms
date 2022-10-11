@@ -1,20 +1,24 @@
-#ifndef DECK_H
+#ifndef _DECK_H_
 
-#define DECK_H
+#define _DECK_H_
 
+#include <stdlib.h>
 
+#include <stdio.h>
 
 /**
 
- * enum kind_e - card kind
+ * enum kind_e - kinds in the deck
 
- * @SPADE: spade kind
+ *
 
- * @HEART: heart kind
+ * @SPADE: 0
 
- * @CLUB: club kind
+ * @HEART: 1
 
- * @DIAMOND: diamond kind
+ * @CLUB: 2
+
+ * @DIAMOND: 3
 
  */
 
@@ -85,8 +89,6 @@ typedef struct deck_node_s
 	struct deck_node_s *next;
 
 } deck_node_t;
-
-
 
 void sort_deck(deck_node_t **deck);
 
